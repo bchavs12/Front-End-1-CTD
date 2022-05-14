@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do-list</title>
+  </head>
+  <body>
+    <header>
+      <h1>To-do-List</h1>
+      <!--Titulo da página-->
+      <p>Preciso fazer essas coisas urgentemente antes que esqueça</p>
+      <nav>
+        <!--Navegação da página atraves de Links-->
+        <a href="#trabalho">Rotina de trabalho</a>
+        <a href="#pg">Rotina de Estudo</a>
+        <a href="#zoom">Aula Ao vivo</a>
+      </nav>
+      <!--Paragrafo-->
+    </header>
+    <main>
+      <ol id="trabalho">
+        <li>
+          <h2>Trabalho</h2>
+          <!--Imagem Rotina de trabalho-->
+          <img
+            src="https://thumbs.jusbr.com/imgs.jusbr.com/publications/artigos/images/busy-11462803308.jpeg"
+            width="200px"
+            height="200px"
+            alt="Rotina de trabalho"
+          />
+        </li>
+
+        <ol>
+          <!--Lista da Rotina de trabalho-->
+          <li>
+            <b>Rotina de Trabalho</b>
+          </li>
+          <ul type="disc">
+            <li>Bater Ponto</li>
+            <li>DDS (Dialogo de segurança)</li>
+            <li>Colocar os EPIs</li>
+            <li>Almoço 12:00 até 13:00</li>
+            <li>Encerramento da jornada</li>
+          </ul>
+        </ol>
+      </ol>
+      <!--Rotina de estudo-->
+      <ol id="pg" start="2">
+        <li>
+          <h2>Estudar PG</h2>
+          <img
+            src="data:image/png;base64,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"
+            width="250px"
+            height="120px"
+            alt="Playgroud DH"
+          />
+        </li>
+        <!--Módulos do Curso-->
+        <ol>
+          <li><b>Front-End</b></li>
+          <ul type="disc">
+            <li>Módulo 1: Uso de ferramentas</li>
+            <li>Módulo 2: Introdução ás estruturas e estilos.</li>
+            <li>Módulo 3: Estruturação avançada</li>
+            <li>Módulo 4: Estilos avançados</li>
+            <li>Módulo 5: Frameworks</li>
+          </ul>
+        </ol>
+        <!--Módulos do Curso-->
+        <ol start="2">
+          <li><b>Introdução a Informática</b></li>
+          <ul type="disc">
+            <li>Módulo 1: Imersão</li>
+            <li>Módulo 2: Hardware e software</li>
+            <li>Módulo 3: Analisando o equipamento</li>
+            <li>Módulo 4: Navegando na internet</li>
+            <li>Módulo 5: Evitando o neufrágio</li>
+          </ul>
+        </ol>
+        <!--Módulos do Curso-->
+        <ol start="3">
+          <li><b>Learning Agility</b></li>
+          <ul type="disc">
+            <li>Módulo 1: Imersão</li>
+            <li>Módulo 2: Hardware e software</li>
+            <li>Módulo 3: Analisando o equipamento</li>
+            <li>Módulo 4: Navegando na internet</li>
+            <li>Módulo 5: Evitando o neufrágio</li>
+          </ul>
+        </ol>
+      </ol>
+      <!--Rotina Aula Online-->
+      <ol id="zoom" start="3">
+        <li>
+          <h2>Aulas No Zoom</h2>
+          <img
+            src="https://konfide.education/wp-content/uploads/2020/03/aulas-online-zoom-1.jpg"
+            width="250px"
+            height="120px"
+            alt="Aulas No Zoom"
+            />
+        </li>
+      </ol>
+        <!--Lista da Rotina-->
+      <ol>
+        <li>
+          <b>Introdução</b>
+        </li>
+        <ul type="disc">
+          <li>Revisão aula anterior</li>
+          <li>Sobre conteúdo do PG</li>
+          <li>Perguntas e Dúvidas</li>
+          <li>Mesas de Trabalho</li>
+          <li>Encerramento da aula</li>
+        </ul>
+      </ol>
+
+      <ol start="2">
+        <li><b>Front-End</b></li>
+        <ul type="disc">
+          <li>Kahoot!</li>
+          <li>Revisão do conteúdo do PG</li>
+          <li>Perguntas e Dúvidas</li>
+          <li>Mesas de Trabalho</li>
+          <li>Encerramento da aula</li>
+        </ul>
+      </ol>
+    </main>
+
+    <footer>&reg; Bruno Chaves</footer>
+  </body>
+</html>
