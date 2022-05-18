@@ -1,0 +1,10 @@
+body {
+    background-color: gray;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 800vh;
+    background-image: url(../img/inverno.jpg);
+}
