@@ -13,7 +13,8 @@
 }
 
 html {
-  font-size: 15px;
+  /* A cada 1rem será considerado 10px */
+  font-size: 62,5%;
 }
 
 header {
@@ -23,10 +24,10 @@ header {
 .desconto {
   background-color: var(--secondary-color);
   color: var(--dark-color);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-left: 20px;
-  height: 23px;
+  height: 2.3rem;
 
   display: flex;
   align-items: center;
@@ -137,6 +138,10 @@ nav ul li a {
   gap: 8px;
 }
 
+.form__col1 div input {
+  background-color: red;
+}
+
 .form__col2 {
   width: 50%;
   display: flex;
@@ -182,6 +187,7 @@ textarea {
   background-color: var(--dark-color);
   color: var(--light-color);
 }
+
 
 footer {
   height: 61px;
