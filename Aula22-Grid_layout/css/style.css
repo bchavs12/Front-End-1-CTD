@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'roboto', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: 50px 1fr; /* linhas */
+  grid-template-columns: 150px 1fr; /* Três Colunas*/
+  grid-template-areas:
+    'header header'
+    'secao2 secao1';
+}
+
+header {
+  grid-area: header;
+  background-color: #345b63;
+  color: #ffff;
+
+  text-align: center;
+  padding: 5px;
+}
+
+#secao1 {
+  /* Aside-Nav */
+  grid-area: secao2;
+  color: #f3f3f3;
+  background-color: #152D35;
+  display: flex;
+  justify-content: center;
+}
+
+#secao1 aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+
+#secao2 {
+    grid-area: secao1;
+    background-color:#DDF0E4;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
