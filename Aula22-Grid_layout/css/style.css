@@ -14,7 +14,7 @@ body {
   grid-template-rows: 50px 1fr; /* linhas */
   grid-template-columns: 150px 1fr; /* Três Colunas*/
   grid-template-areas:
-    'header header'
+    'header header '
     'secao2 secao1';
 }
 
@@ -31,27 +31,25 @@ header {
   /* Aside-Nav */
   grid-area: secao2;
   color: #f3f3f3;
-  background-color: #152D35;
+  background-color: #152d35;
   display: flex;
   justify-content: center;
 }
 
 #secao1 aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
 }
 
-
 #secao2 {
-    grid-area: secao1;
-    background-color:#DDF0E4;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
+  grid-area: secao1;
+  background-color: #ddf0e4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px;
+  justify-content: center;
+}
