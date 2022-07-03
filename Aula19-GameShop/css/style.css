@@ -68,11 +68,51 @@ html {
     display: flex;
     align-items: center;
 }
+/* Menu toggle mobile */
+.one,
+.two,
+.three {
+    background-color: #FFFFFF;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+} 
 
-#menu-toggle img {
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-right: 10px;
+.menu-toggle {
+    width: 27px;
+    height: 27px;
+    margin-right: 20px;
+}
+
+/*menu-toggle FullSreen*/ 
+.menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #222222;
+
+    z-index: 10;
+}
+
+.menu-section.on #menu {
+    display: block;
+    color: #FFFFFF;
+}
+
+.menu-section.on .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+.menu-section.on .menu-toggle .one {
+    transform: rotate(45reg)
+    translate(7px, 7px);
+    
 }
 
 #menu ul {
@@ -92,7 +132,6 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 #banner {
